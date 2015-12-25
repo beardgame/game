@@ -25,11 +25,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\TomRijnbeek.Game\Debug\</OutputPath>
+    <OutputPath>..\..\bin\TomRijnbeek.Game\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\bin\TomRijnbeek.Game\Debug\TomRijnbeek.Game.XML</DocumentationFile>
+    <DocumentationFile>..\..\bin\TomRijnbeek.Game\Release\TomRijnbeek.Game.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
