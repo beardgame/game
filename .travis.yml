@@ -1,0 +1,8 @@
+language: csharp
+solution: TomRijnbeek.Game.sln
+
+mono:
+ - latest
+
+script:
+  - xbuild /p:Configuration=Release TomRijnbeek.Game.sln
