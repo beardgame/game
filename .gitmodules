@@ -1,0 +1,9 @@
+[submodule "libs/amulware.Graphics"]
+	path = libs/amulware.Graphics
+	url = git@github.com:amulware/awgraphics.git
+[submodule "libs/TomRijnbeek.Audio"]
+	path = libs/TomRijnbeek.Audio
+	url = https://github.com/tomrijnbeek/tomrijnbeek-audio
+[submodule "libs/Bearded.Utilities"]
+	path = libs/Bearded.Utilities
+	url = git@github.com:beardgame/utilities.git
