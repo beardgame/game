@@ -42,10 +42,27 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\GameObject.cs" />
+    <Compile Include="Components\IGameComponent.cs" />
+    <Compile Include="Components\IListener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\amulware.Graphics\src\amulware.Graphics\amulware.Graphics.csproj">
+      <Project>{59beda5c-d68a-4011-89ba-c09421d22974}</Project>
+      <Name>amulware.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\Bearded.Utilities\src\Bearded.Utilities.csproj">
+      <Project>{2f580b9d-6255-4427-8395-5ef236c9401c}</Project>
+      <Name>Bearded.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\TomRijnbeek.Audio\src\TomRijnbeek.Audio\TomRijnbeek.Audio.csproj">
+      <Project>{da11432a-23eb-4719-adbb-137c7441ae47}</Project>
+      <Name>TomRijnbeek.Audio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
