@@ -16,31 +16,49 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\bin\TomRijnbeek.Game\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\bin\TomRijnbeek.Game\Debug\TomRijnbeek.Game.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\bin\TomRijnbeek.Game\Debug\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\bin\TomRijnbeek.Game\Debug\TomRijnbeek.Game.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\OpenTK.1.1.1589.5942\lib\NET40\OpenTK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\amulware.Graphics\src\amulware.Graphics\amulware.Graphics.csproj">
+      <Project>{59beda5c-d68a-4011-89ba-c09421d22974}</Project>
+      <Name>amulware.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\Bearded.Utilities\src\Bearded.Utilities.csproj">
+      <Project>{2f580b9d-6255-4427-8395-5ef236c9401c}</Project>
+      <Name>Bearded.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libs\TomRijnbeek.Audio\src\TomRijnbeek.Audio\TomRijnbeek.Audio.csproj">
+      <Project>{da11432a-23eb-4719-adbb-137c7441ae47}</Project>
+      <Name>TomRijnbeek.Audio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
