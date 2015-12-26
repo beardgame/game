@@ -1,5 +1,9 @@
 ﻿namespace TomRijnbeek.Game.Components
 {
+    /// <summary>
+    /// Interface that specifies that this object listens to messages of a given type.
+    /// </summary>
+    /// <typeparam name="T">The type of the messages listened to.</typeparam>
     public interface IListener<in T>
     {
         /// <summary>
