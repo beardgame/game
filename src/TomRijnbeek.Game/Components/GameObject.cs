@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Bearded.Utilities.Collections;
 using OpenTK;
 
 namespace TomRijnbeek.Game.Components
@@ -7,7 +9,7 @@ namespace TomRijnbeek.Game.Components
     /// <summary>
     /// A game object represents an object in the game of which the behaviour is completely decided by its components.
     /// </summary>
-    public sealed class GameObject
+    public sealed class GameObject : IDeletable
     {
         /// <summary>
         /// The position of the game object in world space.
@@ -25,6 +27,11 @@ namespace TomRijnbeek.Game.Components
         public Vector3 Scale = Vector3.One;
 
         private readonly List<IGameComponent> components = new List<IGameComponent>();
+
+        /// <summary>
+        /// Whether the game object has been destroyed.
+        /// </summary>
+        public bool Deleted { get; private set; }
 
         /// <summary>
         /// Updates the game object.
@@ -106,6 +113,20 @@ namespace TomRijnbeek.Game.Components
         {
             foreach (var c in this.GetComponents<IListener<T>>())
                 c.Listen(message);
+        }
+
+        /// <summary>
+        /// Destroys the game object, removing it from the game state.
+        /// </summary>
+        public void Destroy()
+        {
+            if (this.Deleted)
+                return;
+
+            this.Deleted = true;
+
+            foreach (var c in this.GetComponents<IDisposable>())
+                c.Dispose();
         }
     }
 }

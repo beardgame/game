@@ -1,6 +1,5 @@
 ﻿using System;
 using amulware.Graphics;
-using Bearded.Utilities.Input;
 using OpenTK;
 using OpenTK.Graphics;
 
@@ -13,10 +12,28 @@ namespace TomRijnbeek.Game
     {
         private readonly Game game;
 
+        /// <summary>
+        /// Creates a new game window instance.
+        /// </summary>
+        /// <param name="game"></param>
+        /// <param name="title"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
         public GameWindow(Game game, string title, int width = 1280, int height = 720)
             : base(width, height, GraphicsMode.Default, title, GameWindowFlags.Default)
         {
             this.game = game;
+        }
+
+        /// <summary>
+        /// Called when the NativeWindow is resized.
+        /// </summary>
+        /// <param name="e">Not used.</param>
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+
+            this.game.OnResize();
         }
 
         /// <summary>
@@ -46,6 +63,8 @@ namespace TomRijnbeek.Game
         protected override void OnRender(UpdateEventArgs e)
         {
             this.game.OnRender(e);
+
+            this.SwapBuffers();
         }
     }
 }

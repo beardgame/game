@@ -2,6 +2,7 @@
 using amulware.Graphics;
 using Bearded.Utilities.Input;
 using OpenTK.Input;
+using TomRijnbeek.Game.Rendering;
 
 namespace TomRijnbeek.Game
 {
@@ -52,9 +53,16 @@ namespace TomRijnbeek.Game
 
         internal void OnLoad(MouseDevice mouse)
         {
+            // ReSharper disable once ObjectCreationAsStatement
+            new GameRenderer();
             InputManager.Initialize(mouse);
 
             this.Load();
+        }
+
+        internal void OnResize()
+        {
+            GameRenderer.Instance.SetSize(this.window.Width, this.window.Height);
         }
 
         internal void OnUpdate(UpdateEventArgs e)
@@ -69,7 +77,7 @@ namespace TomRijnbeek.Game
 
         internal void OnRender(UpdateEventArgs e)
         {
-            this.Render(e);
+            GameRenderer.Instance.Render(e);
         }
 
         /// <summary>
@@ -82,12 +90,6 @@ namespace TomRijnbeek.Game
         /// </summary>
         /// <param name="e"></param>
         protected abstract void Update(UpdateEventArgs e);
-
-        /// <summary>
-        /// Runs a single render frame.
-        /// </summary>
-        /// <param name="e"></param>
-        protected abstract void Render(UpdateEventArgs e);
 
         /// <summary>
         /// Disposes the game.
