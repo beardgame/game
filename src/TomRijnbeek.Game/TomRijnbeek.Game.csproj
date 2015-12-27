@@ -52,8 +52,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendering\GameRenderer.cs" />
     <Compile Include="Rendering\IRenderer.cs" />
+    <Compile Include="World\Camera.cs" />
+    <Compile Include="World\OrthographicCamera.cs" />
+    <Compile Include="World\PerspectiveCamera.cs" />
+    <Compile Include="World\WorldManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\shaders\primitives.fs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\shaders\primitives.vs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

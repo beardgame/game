@@ -1,5 +1,6 @@
 ﻿using System;
 using amulware.Graphics;
+using amulware.Graphics.ShaderManagement;
 using Bearded.Utilities.Input;
 using OpenTK.Input;
 using TomRijnbeek.Game.Rendering;
