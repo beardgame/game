@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Components\ComponentGame.cs" />
     <Compile Include="Components\GameObject.cs" />
+    <Compile Include="Components\GameObjectTemplate.cs" />
     <Compile Include="Components\GameState.cs" />
     <Compile Include="Components\IGameComponent.cs" />
     <Compile Include="Components\IListener.cs" />

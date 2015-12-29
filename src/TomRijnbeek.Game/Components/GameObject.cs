@@ -128,5 +128,26 @@ namespace TomRijnbeek.Game.Components
             foreach (var c in this.GetComponents<IDisposable>())
                 c.Dispose();
         }
+
+        #region Instantiating
+        private static readonly Dictionary<Type, GameObjectTemplate> templates = new Dictionary<Type, GameObjectTemplate>(); 
+
+        /// <summary>
+        /// Instantiates a new game object with the specified definition.
+        /// </summary>
+        /// <typeparam name="T">The type of the game object definition.</typeparam>
+        /// <returns></returns>
+        public static GameObject Instantiate<T>() where T : GameObjectTemplate, new()
+        {
+            GameObjectTemplate template;
+            if (GameObject.templates.TryGetValue(typeof (T), out template))
+                return template.Instantiate();
+
+            template = new T();
+            GameObject.templates.Add(typeof(T), template);
+
+            return template.Instantiate();
+        }
+        #endregion
     }
 }
