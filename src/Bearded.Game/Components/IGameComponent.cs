@@ -1,4 +1,4 @@
-﻿namespace TomRijnbeek.Game.Components
+﻿namespace Bearded.Game.Components
 {
     /// <summary>
     /// The interface for game components that can be added to a game object.

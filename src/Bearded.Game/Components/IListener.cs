@@ -1,4 +1,4 @@
-﻿namespace TomRijnbeek.Game.Components
+﻿namespace Bearded.Game.Components
 {
     /// <summary>
     /// Interface that specifies that this object listens to messages of a given type.

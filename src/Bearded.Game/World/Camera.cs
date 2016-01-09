@@ -3,7 +3,7 @@ using amulware.Graphics;
 using Bearded.Utilities.Math;
 using OpenTK;
 
-namespace TomRijnbeek.Game.World
+namespace Bearded.Game.World
 {
     /// <summary>
     /// Object representing a rendering camera.

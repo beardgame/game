@@ -1,4 +1,4 @@
-﻿namespace TomRijnbeek.Game.Rendering
+﻿namespace Bearded.Game.Rendering
 {
     /// <summary>
     /// Something that can be rendered.

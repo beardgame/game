@@ -4,7 +4,7 @@ using System.Linq;
 using Bearded.Utilities.Collections;
 using OpenTK;
 
-namespace TomRijnbeek.Game.Components
+namespace Bearded.Game.Components
 {
     /// <summary>
     /// A game object represents an object in the game of which the behaviour is completely decided by its components.

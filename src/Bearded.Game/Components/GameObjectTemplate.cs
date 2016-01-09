@@ -1,4 +1,4 @@
-﻿namespace TomRijnbeek.Game.Components
+﻿namespace Bearded.Game.Components
 {
     /// <summary>
     /// Wrapper class for game object definitions.

@@ -3,7 +3,7 @@ using amulware.Graphics;
 using OpenTK;
 using OpenTK.Graphics;
 
-namespace TomRijnbeek.Game
+namespace Bearded.Game
 {
     /// <summary>
     /// Program wrapper that forwards calls to the game.

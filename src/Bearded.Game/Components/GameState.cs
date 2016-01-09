@@ -1,7 +1,7 @@
 ﻿using amulware.Graphics;
 using Bearded.Utilities.Collections;
 
-namespace TomRijnbeek.Game.Components
+namespace Bearded.Game.Components
 {
     /// <summary>
     /// The current game state.

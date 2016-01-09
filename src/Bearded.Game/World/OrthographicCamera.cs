@@ -1,6 +1,6 @@
 ﻿using OpenTK;
 
-namespace TomRijnbeek.Game.World
+namespace Bearded.Game.World
 {
     /// <summary>
     /// A camera that uses ortographic projection.

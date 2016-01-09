@@ -1,6 +1,6 @@
 ﻿using Bearded.Utilities;
 
-namespace TomRijnbeek.Game.World
+namespace Bearded.Game.World
 {
     /// <summary>
     /// Manages the rendering of the world space.

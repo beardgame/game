@@ -1,6 +1,6 @@
 ﻿using amulware.Graphics;
 
-namespace TomRijnbeek.Game.Components
+namespace Bearded.Game.Components
 {
     /// <summary>
     /// A game based on component-based programming.

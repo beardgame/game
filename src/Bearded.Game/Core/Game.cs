@@ -3,9 +3,9 @@ using amulware.Graphics;
 using amulware.Graphics.ShaderManagement;
 using Bearded.Utilities.Input;
 using OpenTK.Input;
-using TomRijnbeek.Game.Rendering;
+using Bearded.Game.Rendering;
 
-namespace TomRijnbeek.Game
+namespace Bearded.Game
 {
     /// <summary>
     /// A simplified interface to the amulware.Graphics.Program class.

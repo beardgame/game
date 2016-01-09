@@ -1,5 +1,5 @@
-# TomRijnbeek.Game
-TomRijnbeek.Game is a small framework built to easily start up new game projects. It is based on a selection of tools from different libraries, written by [Paul Scharf](http://github.com/amulware) and [Tom Rijnbeek](http://github.com/tomrijnbeek)., primarily developed for [Roche Fusion](http://store.steampowered.com/app/334140) and other projects.
+# Bearded.Game
+Bearded.Game is a small framework built to easily start up new game projects. It is based on a selection of tools from different libraries, written by [Paul Scharf](http://github.com/amulware) and [Tom Rijnbeek](http://github.com/tomrijnbeek), primarily developed for [Roche Fusion](http://store.steampowered.com/app/334140) and other projects.
 
 The libraries in particular are:
 

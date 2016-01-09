@@ -4,7 +4,7 @@ using amulware.Graphics.ShaderManagement;
 using Bearded.Utilities;
 using OpenTK.Graphics.OpenGL;
 
-namespace TomRijnbeek.Game.Rendering
+namespace Bearded.Game.Rendering
 {
     /// <summary>
     /// Singleton game render manager.
