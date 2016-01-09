@@ -10,6 +10,6 @@ The libraries in particular are:
 The libraries are included as submodule to make it easy to work on these libraries in the context of a small gaming framework.
 
 ## Current State
-[![Build Status](https://travis-ci.org/tomrijnbeek/tomrijnbeek-game.svg)](https://travis-ci.org/tomrijnbeek/tomrijnbeek-game)
+[![Build Status](https://travis-ci.org/beardgame/game.svg?branch=develop)](https://travis-ci.org/beardgame/game)
 
 The library is currently in a scaffolding phase. It is therefore not recommended to use this library, while it is developed into a workable state.
